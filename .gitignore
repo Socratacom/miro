@@ -28,15 +28,12 @@ wp-content/plugins/*
 # !wp-content/plugins/my-single-file-plugin.php
 !wp-content/plugins/socrata-case-studies/
 !wp-content/plugins/socrata-image-attribution/
-!wp-content/plugins/socrata-stories/
-!wp-content/plugins/socrata-tech-blog/
 !wp-content/plugins/socrata-open-data-field-guide/
 !wp-content/plugins/socrata-open-performance-guide/
 !wp-content/plugins/socrata-newsroom/
 !wp-content/plugins/socrata-events/
 !wp-content/plugins/socrata-videos/
 !wp-content/plugins/socrata-downloads/
-!wp-content/plugins/socrata-open-data-directory/
 !wp-content/plugins/socrata-webinars/
 !wp-content/plugins/socrata-content-discovery/
 !wp-content/plugins/socrata-leadership/
@@ -45,4 +42,4 @@ wp-content/plugins/*
 
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
-!wp-content/themes/sage-8.5.1/
+!wp-content/themes/miro/
