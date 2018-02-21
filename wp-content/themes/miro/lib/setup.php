@@ -85,7 +85,12 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(),
+    is_page(),
+    is_archive(),
+    is_single(),
     is_page_template('template-custom.php'),
+    is_page_template('template-fluid.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
@@ -95,7 +100,11 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.0-beta');
+  wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900', false, null);
+	wp_enqueue_style('google-fonts');
+  wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');

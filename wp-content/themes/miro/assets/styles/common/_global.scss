@@ -1,1 +1,175 @@
+html, body, [canvas=container], [off-canvas] {    
+	font-family: 'Roboto', sans-serif;
+	font-weight:$font-thin;
+	color: $black;
+	letter-spacing: -0.3px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height:100%;
+}
+body {
+	padding:15px;
+	background-color:$mdc-blue-50;
+}
+header {
+	background-color:$mdc-blue-grey-50;
+}
+.main {
+	padding:0 !important;
+	width:100% !important;
+	float:none !important;
+	background-color:$white;
+}
+.frame-left {
+	border-left:$white solid 15px; 
+	position: fixed; 
+	top:0; 
+	left:0; 
+	height:100vh; 
+	width:15px; 
+	z-index:1
+}
+.frame-right {
+	border-right:$white solid 15px; 
+	position: fixed; 
+	top:0; 
+	right:0; 
+	height:100vh; 
+	width:15px; 
+	z-index:1
+}
+.frame-top {
+	border-top:$white solid 15px; 
+	position: fixed; 
+	top:0; 
+	left:0; 
+	height:15px; 
+	width:100%; 
+	z-index:2;
+}
+.frame-bottom {
+	border-bottom:$white solid 15px; 
+	position: fixed; 
+	bottom:0; 
+	left:0; 
+	height:15px; 
+	width:100%; 
+	z-index:2;
+}
+a:hover {
+	text-decoration:none;
+}
+h1, h2 {
+	letter-spacing:-1px;
+}
+.text-thin {
+	font-weight: $font-thin;
+}
+.text-regular {
+	font-weight: $font-regular;
+}
+.text-medium {
+	font-weight: $font-medium;
+}
+.text-bold {
+	font-weight: $font-bold;
+}
 
+
+@include media-breakpoint-up(xs) {
+	html,
+	body {
+		font-size: 14px !important;
+	}
+	h1 {
+		font-size: 1.602em;
+	}
+	h2 {
+		font-size: 1.424em;
+	}
+	h3 {
+		font-size: 1.266em;
+	}
+	h4 {
+		font-size: 1.125em;
+	}
+	h5 {
+		font-size: 0.889em;
+	}
+	h6 {
+		font-size: 0.79em;
+	}
+	.display-1 {
+		font-size: 3.906em;
+	}
+	.display-2 {
+		font-size: 3.125em;
+	}
+	.display-3 {
+		font-size: 2.5em;
+	}
+	.display-4 {
+		font-size: 2em;
+	}
+	.section-padding {
+		padding-top:80px;
+		padding-bottom:80px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.container, .container-fluid {
+		padding-left:30px;
+		padding-right:30px;
+	}
+	h1 {
+	  font-size: 2.441em;
+	}
+	h2 {
+		font-size: 1.953em;
+	}
+	h3 {
+		font-size: 1.563em;
+	}
+	h4 {
+		font-size: 1.25em;
+	}
+	.display-1 {
+		font-size: 6em;
+	}
+	.display-2 {
+		font-size: 5.5em;
+	}
+	.display-3 {
+		font-size: 4.5em;
+	}
+	.display-4 {
+		font-size: 3.5em;
+	}
+	.section-padding {
+		padding-top:100px;
+		padding-bottom:100px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	html, body {
+		font-size: 16px !important;
+	}
+	.vertical-center {
+		position: relative;
+		top: 50%;
+		transform: perspective(1px) translateY(-50%);
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	html, body {
+		font-size: 18px !important;
+	}
+}
