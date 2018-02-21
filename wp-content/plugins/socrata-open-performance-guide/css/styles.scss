@@ -1,0 +1,351 @@
+$wet-asphalt:                   #3c4855;
+$peter-river:                   #5591b9;
+$clouds:                        #ecf0f1;
+$nephritis:                     #429364;
+$carrot:                        #bf8049;
+$alizarin:                      #c5685e;
+$amethyst:                      #936ba3;
+$turquoise:                     #3a9b88;
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .open-performance-guide, .open-performance-guide-temp {
+
+        .table-of-contents {
+            border-top:$peter-river solid 5px;
+            margin-top:60px;
+            h4 {
+                margin-top:15px;
+                color:$wet-asphalt;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    border-bottom:darken($clouds, 15%) solid 1px;
+                    line-height: normal;
+                    a {
+                        padding:10px;
+                        display: block;
+                        font-size:14px;
+                        font-weight: 400;
+                    }
+                    a:hover {
+                        background-color:darken($clouds, 5%);
+                    }
+                }
+                li:last-child {
+                    border:none;
+                }
+                ul {
+                    padding-left:20px;
+                    li {
+                        border:none;
+                        a {
+                            padding:5px;
+                        }
+                    }
+                    li:last-child {
+                        a {
+                            padding-bottom:10px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-opg-single {
+            position: relative;
+            height:400px;
+            .bar {
+                position: absolute;
+                bottom:0;
+                left:0;
+                height:5px;
+                width:50%;
+                background-color:$peter-river;
+            }
+            h1 {
+                font-weight: 400;
+                font-size: 36px;
+                margin-bottom:30px;
+            }
+            
+        }
+        .opg-case-study-hero {
+            min-height:500px;
+        }
+        dl.steps {
+            counter-reset: my-counter;
+            dt {
+                position: relative;
+                padding: 5px 0 15px 60px;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom:15px;
+            }
+            dt:before {
+                content: counter(my-counter);
+                counter-increment: my-counter;
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width:50px;
+                height:50px;
+                font-size:32px;
+                background:$peter-river;
+                color:white;
+                text-align:center;
+                padding-top:8px;
+                line-height: normal;
+                font-weight: 400;
+            }
+        }
+        dl.approach {
+            counter-reset: my-counter;
+            dt {
+                position: relative;
+                padding: 10px 0 0 30px;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom:15px;
+            }
+            dt:before {
+                content: counter(my-counter);
+                counter-increment: my-counter;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size:24px;
+                color:$peter-river;
+                text-align:center;
+                padding-top:8px;
+                line-height: normal;
+                font-weight: 400;
+            }
+        }
+        dl.legend {
+            counter-reset: my-counter;
+            dt {
+                position: relative;
+                padding: 7px 10px 0 42px;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom:15px;
+            }
+            dt:before {
+                content: counter(my-counter);
+                counter-increment: my-counter;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width:32px;
+                height:32px;
+                font-size:16px;
+                color:white;
+                text-align:center;
+                padding-top:7px;
+                line-height: normal;
+                font-weight: 400;
+            }
+            dt:nth-child(1) {
+                border-top:3px solid $peter-river;
+            }
+            dt:nth-child(1):before {
+                background-color:$peter-river;
+            }
+            dt:nth-child(2) {
+                border-top:3px solid $nephritis;
+            }
+            dt:nth-child(2):before {
+                background-color:$nephritis;
+            }
+            dt:nth-child(3) {
+                border-top:3px solid $carrot;
+            }
+            dt:nth-child(3):before {
+                background-color:$carrot;
+            }
+            dt:nth-child(4) {
+                border-top:3px solid $alizarin;
+            }
+            dt:nth-child(4):before {
+                background-color:$alizarin;
+            }
+            dt:nth-child(5) {
+                border-top:3px solid $amethyst;
+            }
+            dt:nth-child(5):before {
+                background-color:$amethyst;
+            }
+        }
+        .faq {
+            counter-reset: my-badass-counter;
+            dt {
+                position: relative;
+                font-weight:400;
+                font-size:20px;
+                padding: 4px 0 10px 0;
+            }
+            dt:before {
+                content: counter(my-badass-counter);
+                counter-increment: my-badass-counter;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size:50px;
+                line-height: normal;
+                color:$peter-river;
+            }
+            dd {
+                margin: 0 0 50px 0;
+                font-size:16px;
+                font-weight: 300;
+            }
+            dt, dd {
+                padding-left: 50px;
+            }
+        }
+        .guide-quote {
+            background-color:$turquoise;
+            h3 {
+                color:white;
+                font-style: italic;
+                text-transform: none;
+            }
+            h4 {
+                color:white;
+                font-style: italic;
+                text-transform: none;
+            }
+            .author {
+                color:white;
+                text-align:right;
+                font-size: 16px;
+                position: relative;
+                padding-right: 80px;
+                padding-top:10px;
+                line-height: normal;
+                img {
+                    position: absolute;
+                    right:0;
+                    top:0;
+                }
+                small {
+                    color:darken($clouds, 10%);
+                    display: block;
+                }
+
+            }
+        }
+        .chapter-button {
+            a {
+                display:block;
+                background-color:$peter-river;
+                text-align: center;
+                color:white;
+                font-size: 16px;
+                padding:15px;
+            }
+        }
+        .opg-nav {
+            padding:15px 0;
+            a {
+                color:white;        
+                height: 100px;
+                vertical-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 16px;
+                position: relative;
+                background-color:darken($peter-river, 10%);
+            }
+            a:hover {
+                background-color:lighten($peter-river, 10%);
+            }
+            .next-post-button {
+                text-align: right;
+                padding:30px 80px 30px 30px;
+            }
+            .next-post-button:before {
+                font-family: fontawesome;
+                content:"\f18e"; 
+                position: absolute;
+                top:24px;
+                right:30px;
+                color:white;
+                font-size: 40px;
+            }
+            .previous-post-button {
+                text-align: left;
+                padding:30px 30px 30px 80px;
+                border-bottom:$peter-river solid 1px;         
+            }
+            .previous-post-button:before {
+                font-family: fontawesome;
+                content:"\f190"; 
+                position: absolute;
+                top:24px;
+                left:30px;
+                color:white;
+                font-size: 40px;
+            }
+        }
+        .opg-footer {
+            h2 {
+                text-transform: none;
+            }
+            h4 {
+                padding-top:5px;
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .open-performance-guide, .open-performance-guide-temp {
+        .hero-opg-single {
+            h1 {
+                font-size: 46px;
+            }
+        }
+
+        .table-of-contents {
+            margin-top:0;
+        }
+
+        .opg-nav {
+            padding:0;
+             a {      
+                height: 200px;
+            }
+            .previous-post-button {
+                border-bottom:none;
+                border-right:$peter-river solid 1px;         
+            }
+            .previous-post-button:before {
+                top:75px;
+            }          
+            .next-post-button:before {
+                top:75px;
+            }
+
+        }
+
+        dl.steps {
+            dt {
+                width:46%;
+                float: left;
+            }
+            dt:nth-child(2) {
+                float:right;
+
+            }
+        }
+    }
+}
