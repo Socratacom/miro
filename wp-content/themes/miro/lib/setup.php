@@ -106,12 +106,12 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.10-beta');
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.11-beta');
   wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900', false, null);
 	wp_enqueue_style('google-fonts');
   wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.10-beta', false);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.11-beta', false);
   wp_enqueue_script('bootstrap/js', Assets\asset_path('scripts/bootstrap.bundle.min.js'), ['sage/js'], null, true);
   wp_register_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f9bc9354d386b', null, true);
   wp_enqueue_script('addthis');

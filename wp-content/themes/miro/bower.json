@@ -26,7 +26,10 @@
       "main": "./dist/jquery.matchHeight-min.js"
     },
     "aos": {
-      "main": "./dist/aos.js"
+      "main": [
+      	"./dist/aos.js",
+      	"./dist/aos.css"
+      ]
     }
   }
 }
