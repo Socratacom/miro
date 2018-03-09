@@ -1,3 +1,9 @@
 body#tinymce {
+	background-color:$white;
   margin: 12px !important;
+  overflow:scroll;
+  h2 {
+  	font-weight:$font-regular;
+  	margin-top:3rem;
+  }
 }

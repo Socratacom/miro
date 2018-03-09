@@ -16,11 +16,10 @@ body {
 	padding:15px;
 	background-color:$mdc-blue-50;
 }
-header {
-	background-color:$mdc-blue-grey-50;
+body.no-scroll {
+	overflow:hidden;
 }
 .main {
-	padding:0 !important;
 	width:100% !important;
 	float:none !important;
 	background-color:$white;
@@ -123,10 +122,6 @@ h1, h2 {
 }
 
 @include media-breakpoint-up(md) {
-	.container, .container-fluid {
-		padding-left:30px;
-		padding-right:30px;
-	}
 	h1 {
 	  font-size: 2.441em;
 	}

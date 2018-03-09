@@ -34,7 +34,13 @@ function setup() {
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
-  add_theme_support('post-thumbnails');
+  add_theme_support('post-thumbnails', array('post','socrata_events','case_study','news','socrata_webinars','guest-author','socrata_downloads'));
+  set_post_thumbnail_size( 360, 180, array( 'center', 'center')  );
+  add_image_size( 'post-image', 850, 400, array( 'center', 'center'));
+  add_image_size( 'square', 1200, 1200, array( 'center', 'center')); 
+  add_image_size( 'post-image-small', 360, 200, array( 'center', 'center'));
+  add_image_size( 'feature-image', 1600, 912, array( 'center', 'center'));
+  add_image_size( 'full-width-ratio', 9999, 100 );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -100,16 +106,14 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.0-beta');
-  wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900', false, null);
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.9-beta');
+  wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900', false, null);
 	wp_enqueue_style('google-fonts');
   wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
-
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
-
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.8-beta', false);
+  wp_enqueue_script('bootstrap/js', Assets\asset_path('scripts/bootstrap.bundle.min.js'), ['sage/js'], null, true);
+  wp_register_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f9bc9354d386b', null, true);
+  wp_enqueue_script('addthis');
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

@@ -12,8 +12,9 @@
     "iframe-resizer": "^3.5.16",
     "slick-carousel": "^1.8.1",
     "material-design-color-palette": "^1.1.0",
-    "include-media": "^1.4.9"
-  },  
+    "include-media": "^1.4.9",
+    "aos": "^2.2.0"
+  },
   "overrides": {
     "iframe-resizer": {
       "main": "./js/iframeResizer.min.js"
@@ -23,6 +24,9 @@
     },
     "matchHeight": {
       "main": "./dist/jquery.matchHeight-min.js"
+    },
+    "aos": {
+      "main": "./dist/aos.js"
     }
   }
 }

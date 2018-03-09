@@ -17,6 +17,11 @@
         "scripts/customizer.js"
       ]
     },
+    "bootstrap.bundle.min.js": {
+      "files": [
+        "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

@@ -1,0 +1,36 @@
+.feature-image {
+	background-position: center; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	width:50%; 
+	height: 100vh; 
+	position: fixed;
+	top:0;
+}
+.avatar {
+	border-radius:50%;
+}
+.single-post {
+	h2 {
+		margin-top:3rem;
+		font-weight: $font-regular;
+	}
+	figure {
+		width:100%;
+		padding:30px;
+		border:$mdc-grey-300 solid 1px;
+		text-align:center;
+		background-color:$mdc-grey-100;
+		margin:2rem 0;
+		figcaption {
+			font-size: 13px;
+			font-weight: $font-medium;
+			color:$mdc-grey-600;
+			margin-top:15px;
+			font-style: italic;
+		}
+	}
+	figure[style] {
+		max-width:100% !important;
+	}
+}
