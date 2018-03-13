@@ -16,7 +16,7 @@
   		<div class="col-md-5 mr-md-auto text-md-right">
   			<a href="" class="btn btn-lg btn-link"><i class="icon-facebook"></i></a>
   			<a href="" class="btn btn-lg btn-link"><i class="icon-twitter"></i></a>
-  			<a href="" class="btn btn-lg btn-link"><i class="icon-linkedin"></i></a>
+  			<a href="" class="btn btn-lg btn-link"><i class="icon-linbkedin"></i></a>
   			<a href="" class="btn btn-lg btn-link"><i class="icon-youtube"></i></a>
   		</div>
 		</div>
