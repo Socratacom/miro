@@ -41,6 +41,7 @@ function setup() {
   add_image_size( 'post-image-small', 360, 200, array( 'center', 'center'));
   add_image_size( 'feature-image', 1600, 912, array( 'center', 'center'));
   add_image_size( 'full-width-ratio', 9999, 100 );
+  add_image_size( 'sixteen-nine', 720, 405, array( 'center', 'center'));
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -111,7 +112,7 @@ function assets() {
 	wp_enqueue_style('google-fonts');
   wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.17-beta', false);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.18-beta', false);
   wp_enqueue_script('bootstrap/js', Assets\asset_path('scripts/bootstrap.bundle.min.js'), ['sage/js'], null, true);
   wp_register_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f9bc9354d386b', null, true);
   wp_enqueue_script('addthis');
