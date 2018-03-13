@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?3pfp83');
-  src:  url('../fonts/icomoon.eot?3pfp83#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?3pfp83') format('truetype'),
-    url('../fonts/icomoon.woff?3pfp83') format('woff'),
-    url('../fonts/icomoon.svg?3pfp83#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?9dev4');
+  src:  url('../fonts/icomoon.eot?9dev4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9dev4') format('truetype'),
+    url('../fonts/icomoon.woff?9dev4') format('woff'),
+    url('../fonts/icomoon.svg?9dev4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-health-care:before {
+  content: "\e922";
+}
+.icon-data-grid:before {
+  content: "\e923";
+}
+.icon-transportation:before {
+  content: "\e924";
+}
+.icon-youtube:before {
+  content: "\e928";
+}
+.icon-linbkedin:before {
+  content: "\e92d";
+}
+.icon-facebook:before {
+  content: "\e941";
+}
+.icon-twitter:before {
+  content: "\e942";
+}
+.icon-ui-search:before {
+  content: "\e943";
+}
+.icon-ui-arrow-left:before {
+  content: "\e935";
+}
+.icon-ui-arrow-right:before {
+  content: "\e936";
+}
+.icon-ui-arrow-up:before {
+  content: "\e937";
+}
+.icon-ui-arrow-down:before {
+  content: "\e938";
+}
+.icon-ui-chevron-up:before {
+  content: "\e939";
+}
+.icon-ui-chevron-down:before {
+  content: "\e93a";
+}
+.icon-ui-chevron-right:before {
+  content: "\e93b";
+}
+.icon-ui-chevron-left:before {
+  content: "\e93c";
+}
+.icon-ui-minus:before {
+  content: "\e93d";
+}
+.icon-ui-add:before {
+  content: "\e93e";
+}
+.icon-ui-close:before {
+  content: "\e93f";
+}
+.icon-ui-menu:before {
+  content: "\e940";
+}
 .icon-close:before {
   content: "\e934";
 }
@@ -129,15 +189,6 @@
 .icon-message:before {
   content: "\e921";
 }
-.icon-youtube:before {
-  content: "\e922";
-}
-.icon-twitter:before {
-  content: "\e923";
-}
-.icon-linkedin:before {
-  content: "\e924";
-}
 .icon-in-progress:before {
   content: "\e925";
 }
@@ -146,9 +197,6 @@
 }
 .icon-file:before {
   content: "\e927";
-}
-.icon-facebook:before {
-  content: "\e928";
 }
 .icon-dot:before {
   content: "\e929";
@@ -161,9 +209,6 @@
 }
 .icon-construction-worker:before {
   content: "\e92c";
-}
-.icon-health-care:before {
-  content: "\e92d";
 }
 .icon-menu:before {
   content: "\e92e";

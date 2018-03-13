@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
   
-    <main class="main">
+    <main id="trigger-menu" class="main">
       <?php include Wrapper\template_path(); ?>
     </main><!-- /.main -->
 
@@ -50,6 +50,7 @@ use Roots\Sage\Wrapper;
 				function closeNav() {
 				  document.getElementById("siteNav").style.height = "0%";
 				}
+
     </script>
 
   </body>

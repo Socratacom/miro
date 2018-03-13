@@ -5,11 +5,11 @@
 @import "../../bower_components/include-media/dist/_include-media.scss";
 // endbower
 
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "common/global";
 @import "common/material-design-color-palette";
 @import "common/icons";
+@import "common/aos";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
