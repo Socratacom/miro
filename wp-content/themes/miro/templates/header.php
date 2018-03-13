@@ -31,25 +31,44 @@
 				</div>
 
 				<div class="col-sm-4">
-					<div class="card mb-2 match-height">
+					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="#" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="card mb-2 match-height">
+					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="#" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="card mb-2 match-height">
+					<div class="card mb-5 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="#" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
 						</div>
 					</div>
+				</div>
+
+				<hr/>
+
+				<div class="col-sm-3">
+					<h5 class="text-regular text-uppercase border-bottom">Products</h5>
+					<p>links here</p>
+				</div>
+				<div class="col-sm-3">
+					<h5 class="text-regular text-uppercase border-bottom">Services</h5>
+					<p>links here</p>
+				</div>
+				<div class="col-sm-3">
+					<h5 class="text-regular text-uppercase border-bottom">Resources</h5>
+					<p>links here</p>
+				</div>
+				<div class="col-sm-3">
+					<h5 class="text-regular text-uppercase border-bottom">Company</h5>
+					<p>links here</p>
 				</div>
 
 
