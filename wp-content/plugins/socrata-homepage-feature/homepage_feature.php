@@ -148,7 +148,7 @@ function homepage_features($atts, $content = null) {
   ob_start();
 
   ?>
-	<section class="home-slider">
+	<section id="slide-content-trigger" class="home-slider">
 		<div class="slider">
 			<?php
 				$args = array(
@@ -165,6 +165,29 @@ function homepage_features($atts, $content = null) {
 				$overlay = rwmb_meta( 'homepage_feature_overlay_color' );
 			?>
 				<div class="slide">
+					<div class="slide-content section-padding" data-aos="fade-up" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-10 m-sm-auto">
+									<div class="row">
+										<div class="col-md-12 col-lg-8 col-xl-6">
+											<h1 class="text-white display-4"><?php echo the_title();?></h1>
+											<?php if (!empty($subhead)) echo '<h2 class="text-white text-thin mb-4">'.$subhead.'</h2>';?>
+											<div class="d-flex">
+												<?php foreach ( $ctas as $cta_value ) {
+													$btn_text = isset( $cta_value['homepage_feature_btn_text'] ) ? $cta_value['homepage_feature_btn_text'] : '';
+													$url = isset( $cta_value['homepage_feature_url'] ) ? $cta_value['homepage_feature_url'] : '';
+													$target = isset( $cta_value['homepage_feature_target'] ) ? $cta_value['homepage_feature_target'] : '';
+												?>
+												<div class="pr-2"><a href="<?php echo $url;?>" <?php if ( !empty ( $target ) ) echo 'target="_blank" rel="noopener noreferrer"';?> class="btn btn-outline-light"><span class="text-white"><?php echo $btn_text;?></span></a></div>
+												<?php } ;?>												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="image-overlay <?php echo $overlay;?>"></div>
 					<div class="background-image" style="background-image:url(<?php foreach ( $images as $image ) { echo $image['url']; } ?>);"></div>
 				</div>

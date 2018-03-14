@@ -71,29 +71,6 @@
 					<p>links here</p>
 				</div>
 
-
-				<!--
-
-				<div class="row no-gutters">
-					<div class="col-sm-4">
-						<div class="p-3 text-center match-height">
-							<a href="#"><i class="icon-transportation mdc-text-purple-500 display-1 d-block mb-4"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="p-3 text-center match-height">
-							<a href="#"><i class="icon-money mdc-text-green-500 display-1 d-block mb-4"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="p-3 text-center match-height">
-							<a href="#"><i class="icon-data-grid mdc-text-orange-500 display-1 d-block mb-4"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
-						</div>
-					</div>		
-				</div>
-				-->
-
-
 			</div>
 
 
