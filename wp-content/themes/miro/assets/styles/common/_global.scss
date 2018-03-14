@@ -93,6 +93,9 @@ h1, h2 {
 .four-three {
   @include aspect-ratio(4, 3);
 }
+.one-one  {
+  @include aspect-ratio(1, 1);
+}
 
 
 @include media-breakpoint-up(xs) {
