@@ -31,7 +31,7 @@ body.no-scroll {
 	left:0; 
 	height:100vh; 
 	width:15px; 
-	z-index:1
+	z-index:9000;
 }
 .frame-right {
 	border-right:$white solid 15px; 
@@ -40,7 +40,7 @@ body.no-scroll {
 	right:0; 
 	height:100vh; 
 	width:15px; 
-	z-index:1
+	z-index:9000;
 }
 .frame-top {
 	border-top:$white solid 15px; 
@@ -49,7 +49,7 @@ body.no-scroll {
 	left:0; 
 	height:15px; 
 	width:100%; 
-	z-index:2;
+	z-index:9000;
 }
 .frame-bottom {
 	border-bottom:$white solid 15px; 
@@ -58,7 +58,7 @@ body.no-scroll {
 	left:0; 
 	height:15px; 
 	width:100%; 
-	z-index:2;
+	z-index:9000;
 }
 a:hover {
 	text-decoration:none;

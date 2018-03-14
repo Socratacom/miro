@@ -19,6 +19,7 @@
 		background-color: $white;
 		overflow-y: hidden;
 		transition: 0.5s;
+		z-index:1100;
 		.overlay-content {
 			position: absolute;
 			top:0;
@@ -31,14 +32,15 @@
 	}
 	.overlay-close {
 		position:absolute;
+		z-index:1100;
 	}
 	.overlay-menu {
 		position:fixed;
+		z-index:1000;
 	}
 	.overlay-close, .overlay-menu {
 		top:25px;
 		right:30px;
-		z-index:1;
 		padding:0.5rem;
 	}
 	header {
@@ -62,25 +64,16 @@
 				right: 1.2rem;
 			}
 			.arrow:after {
-
-    border-style: solid;
-    position: absolute;
-    border-color: transparent transparent $white transparent;
-    border-width: 8px;
-    top: -4px;
-    right:-8px;
-    content: "";
-
+				border-style: solid;
+				position: absolute;
+				border-color: transparent transparent $white transparent;
+				border-width: 8px;
+				top: -4px;
+				right:-8px;
+				content: "";
 			}
 		}
 	}
-
-
-
-
-
-
-
 }
 
 @include media-breakpoint-up(sm) {

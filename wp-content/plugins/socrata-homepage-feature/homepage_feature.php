@@ -56,14 +56,14 @@ function homepage_feature_register_meta_boxes( $meta_boxes )
   $prefix = 'homepage_feature_';
 
   $meta_boxes[] = array(
-    'title'  => __( 'Homepage Feature Meta', 'homepage_feature_' ),
-    'post_types' => array( 'homepage_feature' ),
+    'title'  => 'Homepage Feature Meta',
+    'post_types' => 'homepage_feature',
     'context'    => 'normal',
     'priority'   => 'high',
     'fields' => array(
     	// TEXTAREA
 			array(
-				'name' => esc_html__( 'Subhead', 'homepage_feature_'  ),
+				'name' => 'Subhead',
 				'id'   => "{$prefix}subhead",
 				'type' => 'textarea',
 				'cols' => 20,
@@ -71,43 +71,67 @@ function homepage_feature_register_meta_boxes( $meta_boxes )
 			),   
       // IMAGE ADVANCED (WP 3.5+)
       array(
-        'name'             => __( 'Image', 'homepage_feature_' ),
-        'id'               => "{$prefix}image",
-        'desc'              => __( 'Image size: 1900 x 720', 'homepage_feature_' ),
-        'type'             => 'image_advanced',
+        'name' => 'Image',
+        'id' => "{$prefix}image",
+        'type' => 'image_advanced',
         'max_file_uploads' => 1,
       ),
+      // SELECT
+			array(
+				'name' 	=> 'Overlay Color',
+				'id'		=> "{$prefix}overlay_color",
+				'type'	=> 'select',
+				// Array of 'value' => 'Label' pairs
+				'options'         => array(
+					'mdc-bg-red-500'					=> 'Red',
+					'mdc-bg-pink-500' 				=> 'Pink',
+					'mdc-bg-purple-500'       => 'Purple',
+					'mdc-bg-deep-purple-500'  => 'Deep Purple',
+					'mdc-bg-indigo-500' 			=> 'Indigo',
+					'mdc-bg-blue-500'     		=> 'Blue',
+					'mdc-bg-light-blue-500'   => 'Light Blue',
+					'mdc-bg-cyan-500' 				=> 'Cyan',
+					'mdc-bg-teal-500'        	=> 'Teal',
+					'mdc-bg-green-500'     		=> 'Green',
+					'mdc-bg-amber-500' 				=> 'Amber',
+					'mdc-bg-orange-500'     	=> 'Orange',
+					'mdc-bg-deep-orange-500'  => 'Deep Orange',					
+					'mdc-bg-blue-grey-500'    => 'Blue Grey',
+				),
+				'multiple'        => false,
+				'placeholder'     => 'Select a Color',
+				'select_all_none' => false,
+			),
       // HEADING
 			array(
 				'type' => 'heading',
-				'name' => esc_html__( 'CTAs', 'homepage_feature_' ),
+				'name' => 'CTAs',
 			),
       // GROUP
 			array(
-			'id'     => "{$prefix}ctas",
-			'type'   => 'group',
-			'clone'  => true,
+			'id' => "{$prefix}ctas",
+			'type' => 'group',
+			'clone' => true,
 			'sort_clone' => true,
 				// Sub-fields
 				'fields' => array(			
 					// TEXT
 					array(
-						'name'  => __( 'Button Text', 'homepage_feature_' ),
+						'name'  => 'Button Text',
 						'id'    => "{$prefix}btn_text",
 						'type'  => 'text',
 					),
 					// URL
 		      array(
-		        'name' => __( 'URL', 'homepage_feature_' ),
+		        'name' => 'URL',
 		        'id'   => "{$prefix}url",
 		        'type' => 'url',
 		      ),
 		      // CHECKBOX
 		      array(
 		        'id'   => "{$prefix}target",
-		        'desc' => __( 'Open in new tab', 'homepage_feature_' ),
+		        'desc' => 'Open in new tab',
 		        'type' => 'checkbox',
-		        // Value can be 0 or 1
 		        'std'  => 0,
 		      ),
 				),
@@ -124,7 +148,7 @@ function homepage_features($atts, $content = null) {
   ob_start();
 
   ?>
-	<section class="home-masthead">
+	<section class="home-slider">
 		<div class="slider">
 			<?php
 				$args = array(
@@ -136,36 +160,19 @@ function homepage_features($atts, $content = null) {
 				// The Loop
 				while ( $myquery->have_posts() ) { $myquery->the_post(); 
 				$subhead = rwmb_meta( 'homepage_feature_subhead' );
-				$images = rwmb_meta( 'homepage_feature_image', 'size=full' );
+				$images = rwmb_meta( 'homepage_feature_image', 'size=sixteen-nine-large' );
 				$ctas = rwmb_meta( 'homepage_feature_ctas' );
+				$overlay = rwmb_meta( 'homepage_feature_overlay_color' );
 			?>
-			<div class="slide" style="background-image:url(<?php foreach ( $images as $image ) { echo $image['url']; } ?>);">
-				<div class="text">
-					<div class="vertical-center">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-8 col-md-6">
-									<h1 class="color-white margin-bottom-15"><?php the_title(); ?></h1>
-									<h4 class="color-white text-normal hidden-xs margin-bottom-0"><?php echo $subhead;?></h4>
-									<?php if ( ! empty( $ctas ) ) { ?>
-									<ul class="cta-list">
-										<?php foreach ( $ctas as $cta_value ) {
-											$btn_text = isset( $cta_value['homepage_feature_btn_text'] ) ? $cta_value['homepage_feature_btn_text'] : '';
-											$url = isset( $cta_value['homepage_feature_url'] ) ? $cta_value['homepage_feature_url'] : '';
-											$target = isset( $cta_value['homepage_feature_target'] ) ? $cta_value['homepage_feature_target'] : '';
-										?>
-										<li><a href="<?php echo $url;?>" <?php if ( !empty ( $target ) ) echo 'target="_blank"';?> class="btn btn-primary outline-white"><?php echo $btn_text;?> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></li>
-										<?php } ;?>
-									</ul>
-									<?php } ;?>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="slide">
+					<div class="image-overlay <?php echo $overlay;?>"></div>
+					<div class="background-image" style="background-image:url(<?php foreach ( $images as $image ) { echo $image['url']; } ?>);"></div>
 				</div>
-			</div>
+
 			<?php } wp_reset_postdata(); ?>
+
 		</div>
+
 	</section>
   <script>jQuery(function(e){e(".slider").slick({arrows:!1,dots:!0,autoplay:!0,autoplaySpeed:5e3,speed:500,infinite:!0,fade:!0,cssEase:"linear",pauseOnHover:!0,pauseOnDotsHover:!0}),e(".slider").show()});</script>
   <?php
