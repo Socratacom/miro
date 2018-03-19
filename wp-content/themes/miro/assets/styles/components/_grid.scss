@@ -15,6 +15,7 @@
   }
 }*/
 .card {
+	border:none;
 	border-radius:0;
 	-o-transition:.25s;
 	-ms-transition:.25s;
@@ -31,5 +32,5 @@
 	}
 }
 .card:hover {
-	box-shadow: 0 5px 15px $mdc-grey-400;
+	box-shadow: 0 5px 20px $mdc-grey-400;
 }

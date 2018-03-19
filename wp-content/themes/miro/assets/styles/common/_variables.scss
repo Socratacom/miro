@@ -348,7 +348,17 @@ $btn-light-dark: 			shade($light, 15%);
 $btn-dark-dark: 			shade($dark, 15%);
 
 // Font Weight
-$font-thin:			300;
+$font-thin:			100;
+$font-light:		300;
 $font-regular:	400;
 $font-medium:		500;
 $font-bold:			900;
+
+// Slick Carousel 
+$slick-dot-character: "\e944" !default;
+$slick-dot-size: 16px !default;
+$slick-dot-color: $white !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-opacity-default: 1 !default;
+$slick-opacity-on-hover: 0.75 !default;
+$slick-opacity-not-active: 0.25 !default;

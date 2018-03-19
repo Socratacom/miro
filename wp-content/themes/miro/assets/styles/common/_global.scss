@@ -1,6 +1,6 @@
 html, body, [canvas=container], [off-canvas] {    
 	font-family: 'Roboto', sans-serif;
-	font-weight:$font-thin;
+	font-weight:$font-light;
 	color: $black;
 	letter-spacing: -0.3px;
 	-webkit-font-smoothing: antialiased;
@@ -63,11 +63,11 @@ body.no-scroll {
 a:hover {
 	text-decoration:none;
 }
-h1, h2 {
-	letter-spacing:-1px;
-}
 .text-thin {
 	font-weight: $font-thin;
+}
+.text-light {
+	font-weight: $font-light;
 }
 .text-regular {
 	font-weight: $font-regular;
@@ -99,39 +99,46 @@ h1, h2 {
 
 
 @include media-breakpoint-up(xs) {
-	html,
-	body {
+	html, body {
 		font-size: 14px !important;
+	}	
+	h1, h2, h3 {
+		font-weight: $font-light;
+		letter-spacing:normal;
 	}
 	h1 {
-		font-size: 1.602em;
+		font-size: 1.602rem;
 	}
 	h2 {
-		font-size: 1.424em;
+		font-size: 1.424rem;
 	}
 	h3 {
-		font-size: 1.266em;
+		font-size: 1.266rem;
 	}
 	h4 {
-		font-size: 1.125em;
+		font-size: 1.125rem;
 	}
 	h5 {
-		font-size: 0.889em;
+		font-size: 0.889rem;
 	}
 	h6 {
-		font-size: 0.79em;
+		font-size: 0.79rem;
+	}
+	.display-1, .display-2, .display-3, .display-4 {
+		font-weight:$font-thin;
+		letter-spacing:-.1rem;
 	}
 	.display-1 {
-		font-size: 3.906em;
+		font-size:3.75rem;
 	}
 	.display-2 {
-		font-size: 3.125em;
+		font-size:3.5rem;
 	}
 	.display-3 {
-		font-size: 2.5em;
+		font-size:3rem;
 	}
 	.display-4 {
-		font-size: 2em;
+		font-size:2.5rem;
 	}
 	.section-padding {
 		padding-top:80px;
@@ -140,29 +147,33 @@ h1, h2 {
 }
 
 @include media-breakpoint-up(md) {
+	h1, h2, h3 {
+		letter-spacing:-.1rem;
+	}
 	h1 {
-	  font-size: 2.441em;
+	  font-size: 2.441rem;
 	}
 	h2 {
-		font-size: 1.953em;
+		font-size: 1.953rem;
 	}
 	h3 {
-		font-size: 1.563em;
+		font-size: 1.563rem;
 	}
 	h4 {
-		font-size: 1.25em;
+		font-size: 1.25rem;
 	}
+
 	.display-1 {
-		font-size: 6em;
+		font-size:4.5rem;
 	}
 	.display-2 {
-		font-size: 5.5em;
+		font-size:4rem;
 	}
 	.display-3 {
-		font-size: 4.5em;
+		font-size:3.25rem;
 	}
 	.display-4 {
-		font-size: 3.5em;
+		font-size:2.75rem;
 	}
 	.section-padding {
 		padding-top:100px;
@@ -173,6 +184,18 @@ h1, h2 {
 @include media-breakpoint-up(lg) {
 	html, body {
 		font-size: 16px !important;
+	}
+	.display-1 {
+		font-size:5rem;
+	}
+	.display-2 {
+		font-size:4.5rem;
+	}
+	.display-3 {
+		font-size:4rem;
+	}
+	.display-4 {
+		font-size:3.5rem;
 	}
 	.vertical-center {
 		position: relative;

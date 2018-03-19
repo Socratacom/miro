@@ -14,12 +14,12 @@
 						</form>
 	  			</div>
 	  			<div class="col-sm-6">
-	  				<h2 class="text-thin">I'm a data decision maker</h2>
+	  				<h2>I'm a data decision maker</h2>
 					  <p class="mb-4">Are you looking for cost effective data solutions that etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 					  <p class="mb-5"><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
 	  			<div class="col-sm-6">
-	  				<h2 class="text-thin">I work with data daily</h2>
+	  				<h2>I work with data daily</h2>
 					  <p class="mb-4">Do you analyze data to make informed decisions nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.</p>
 					  <p class="mb-5"><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
@@ -27,7 +27,7 @@
 				<hr/>
 
 				<div class="col-sm-12">
-					<h3 class="text-thin mb-4">Solutions for...</h3>
+					<h3 class="mb-4">Solutions for...</h3>
 				</div>
 
 				<div class="col-sm-4">

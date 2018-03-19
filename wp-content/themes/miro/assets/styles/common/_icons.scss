@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?9dev4');
-  src:  url('../fonts/icomoon.eot?9dev4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?9dev4') format('truetype'),
-    url('../fonts/icomoon.woff?9dev4') format('woff'),
-    url('../fonts/icomoon.svg?9dev4#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?3vby9u');
+  src:  url('../fonts/icomoon.eot?3vby9u#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3vby9u') format('truetype'),
+    url('../fonts/icomoon.woff?3vby9u') format('woff'),
+    url('../fonts/icomoon.svg?3vby9u#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ui-dot:before {
+  content: "\e944";
+}
 .icon-health-care:before {
   content: "\e922";
 }
