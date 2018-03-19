@@ -165,7 +165,7 @@ function homepage_features($atts, $content = null) {
 				$overlay = rwmb_meta( 'homepage_feature_overlay_color' );
 			?>
 				<div class="slide">
-					<div class="slide-content section-padding" data-aos="fade-up" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200">
+					<div class="slide-content section-padding" data-aos="fade-up" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200" disable="mobile">
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-sm-10 m-sm-auto">
