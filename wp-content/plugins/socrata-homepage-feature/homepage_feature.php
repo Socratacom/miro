@@ -198,7 +198,7 @@ function homepage_features($atts, $content = null) {
 
 	</section>
 
-	<script>jQuery(function(e){e(".slider").slick({arrows:!0,appendArrows:e(".home-slider"),prevArrow:'<button class="icon-ui-arrow-left toggle-left btn-circle btn-outline-light" data-aos="fade-zoom-in" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200"></button>',nextArrow:'<button class="icon-ui-arrow-right toggle-right btn-circle btn-outline-light" data-aos="fade-zoom-in" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200"></button>',dots:!0,autoplay:!0,autoplaySpeed:5e3,speed:500,infinite:!0,fade:!0,cssEase:"linear",pauseOnHover:!0,pauseOnDotsHover:!0}),e(".slider").show()});</script>
+	<script>jQuery(function(e){e(".slider").slick({arrows:!0,appendArrows:e(".home-slider"),prevArrow:'<button class="icon-ui-arrow-left toggle-left btn-circle btn-outline-light" data-aos="fade" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200"></button>',nextArrow:'<button class="icon-ui-arrow-right toggle-right btn-circle btn-outline-light" data-aos="fade" data-aos-easing="ease-in-out-sine" data-aos-duration="600" data-aos-anchor="#slide-content-trigger" data-aos-anchor-placement="top-top" data-aos-offset="-200"></button>',dots:!0,autoplay:!0,autoplaySpeed:5e3,speed:500,infinite:!0,fade:!0,cssEase:"linear",pauseOnHover:!0,pauseOnDotsHover:!0}),e(".slider").show()});</script>
 
   <?php
   $content = ob_get_contents();

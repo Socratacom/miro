@@ -76,11 +76,11 @@
 
 	</div>
 </nav>
-<header class="banner bg-white" role="banner">
+<header class="banner bg-white py-2 py-sm-5" role="banner">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-10 m-auto">
-				<div class="d-flex align-items-center pt-2 pt-sm-5">
+				<div class="d-flex align-items-center">
 					<div class="mr-auto">
 						<a href="<?php echo home_url('/'); ?>" class="brand header-logo"></a>
 					</div>

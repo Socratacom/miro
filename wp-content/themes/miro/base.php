@@ -32,15 +32,11 @@ use Roots\Sage\Wrapper;
       <?php include Wrapper\template_path(); ?>
     </main><!-- /.main -->
 
-    <?php if (is_single()) {
-    	do_action('get_footer');
-      get_template_part('templates/footer-blog');
-      wp_footer();
-    } else {
-    	do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    };?>
+		<?php 
+			do_action('get_footer');
+			get_template_part('templates/footer');
+			wp_footer();
+		?>
 
     <script type="text/javascript">
     	  //Overlay Menu

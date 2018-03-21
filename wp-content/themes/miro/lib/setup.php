@@ -36,13 +36,9 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails', array('post','socrata_events','case_study','news','socrata_webinars','guest-author','socrata_downloads'));
   set_post_thumbnail_size( 360, 180, array( 'center', 'center')  );
-  add_image_size( 'post-image', 850, 400, array( 'center', 'center'));
-  add_image_size( 'square', 1200, 1200, array( 'center', 'center')); 
-  add_image_size( 'post-image-small', 360, 200, array( 'center', 'center'));
-  add_image_size( 'feature-image', 1600, 912, array( 'center', 'center'));
-  add_image_size( 'full-width-ratio', 9999, 100 );
   add_image_size( 'sixteen-nine', 720, 405, array( 'center', 'center'));
   add_image_size( 'sixteen-nine-large', 1600, 900, array( 'center', 'center'));
+  add_image_size( 'twenty-one-nine', 1600, 675, array( 'center', 'center'));
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -108,12 +104,12 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.29-beta');
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.30-beta');
   wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900', false, null);
 	wp_enqueue_style('google-fonts');
   wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.18-beta', false);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], '4.0.19-beta', false);
   wp_enqueue_script('bootstrap/js', Assets\asset_path('scripts/bootstrap.bundle.min.js'), ['sage/js'], null, true);
   wp_register_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f9bc9354d386b', null, true);
   wp_enqueue_script('addthis');
