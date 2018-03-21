@@ -100,9 +100,9 @@
 						<div class="dropdown d-none d-sm-block">
 							<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions for</button>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
-							<a href="/data-solution-transportation" class="dropdown-item">Transportation</a>
-							<a href="/data-solution-finance" class="dropdown-item">Finance</a>
-							<a href="/data-solution-open-data" class="dropdown-item">Open Data</a>
+							<a href="/transportation" class="dropdown-item">Transportation</a>
+							<a href="/finance" class="dropdown-item">Finance</a>
+							<a href="/open-data" class="dropdown-item">Open Data</a>
 							<div class="arrow bottom right"></div>
 							</div>
 						</div>
