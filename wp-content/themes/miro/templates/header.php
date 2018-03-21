@@ -33,21 +33,21 @@
 				<div class="col-sm-4">
 					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="/data-solution-transportation" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
+							<a href="/transportation" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="/data-solution-finance" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
+							<a href="/finance" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="card mb-5 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="/data-solution-open-data" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
+							<a href="/open-data" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
 						</div>
 					</div>
 				</div>
