@@ -29,7 +29,7 @@
 					</div>
 				</div>
 				<div class="mb-5" data-aos="fade" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="400"><?php echo do_shortcode('[addthis]');?></div>
-				<p class="d-none d-lg-block"><a href="#start" class="icon-down-arrow display-4"></a></p>
+				<p class="d-none d-lg-block" data-aos="fade" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="600"><a href="#start" class="icon-down-arrow display-4"></a></p>
 				
 			</div>			
 		</div>

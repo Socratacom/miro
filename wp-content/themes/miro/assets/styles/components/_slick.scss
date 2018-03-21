@@ -216,6 +216,9 @@
 }
 
 @include media-breakpoint-up(xs) {
+	.home-slider .slider .slide .background-image {
+		background-attachment:scroll;
+	}
 	.slick-arrow {
 		display:none !important;
 	}

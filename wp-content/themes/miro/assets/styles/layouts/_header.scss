@@ -28,6 +28,17 @@
 			height:100vh;
 			padding:100px 0;
 			overflow:auto;
+			.menu-products-container, .menu-services-container, .menu-resources-container, .menu-company-container {
+				.menu {
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					a {
+						font-weight: $font-medium;
+						font-size:.9rem;
+					}
+				}
+			}
 		}
 	}
 	.overlay-close {
@@ -73,6 +84,12 @@
 				content: "";
 			}
 		}
+	}
+	.lockscroll.aos-init {
+		pointer-events:none;
+	}
+	.lockscroll.aos-animate {
+		pointer-events:auto;
 	}
 }
 

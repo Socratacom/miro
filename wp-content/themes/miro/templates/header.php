@@ -16,12 +16,12 @@
 	  			<div class="col-sm-6">
 	  				<h2>I'm a data decision maker</h2>
 					  <p class="mb-4">Are you looking for cost effective data solutions that etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-					  <p class="mb-5"><a href="#" class="btn btn-primary">Learn More</a></p>
+					  <p class="mb-5"><a href="/data-solution-buyer" class="btn btn-primary">Learn More</a></p>
 					</div>
 	  			<div class="col-sm-6">
 	  				<h2>I work with data daily</h2>
 					  <p class="mb-4">Do you analyze data to make informed decisions nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.</p>
-					  <p class="mb-5"><a href="#" class="btn btn-primary">Learn More</a></p>
+					  <p class="mb-5"><a href="/data-solution-user" class="btn btn-primary">Learn More</a></p>
 					</div>
 				
 				<hr/>
@@ -33,21 +33,21 @@
 				<div class="col-sm-4">
 					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="#" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
+							<a href="/data-solution-transportation" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="card mb-2 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="#" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
+							<a href="/data-solution-finance" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="card mb-5 match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
-							<a href="#" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
+							<a href="/data-solution-open-data" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
 						</div>
 					</div>
 				</div>
@@ -56,19 +56,31 @@
 
 				<div class="col-sm-3">
 					<h5 class="text-regular text-uppercase border-bottom">Products</h5>
-					<p>links here</p>
+					<?php wp_nav_menu( array( 
+            'theme_location' => 'site_nav_products',
+            'container'       => 'div'
+          ) ); ?>
 				</div>
 				<div class="col-sm-3">
 					<h5 class="text-regular text-uppercase border-bottom">Services</h5>
-					<p>links here</p>
+					<?php wp_nav_menu( array( 
+            'theme_location' => 'site_nav_services',
+            'container'       => 'div'
+          ) ); ?>
 				</div>
 				<div class="col-sm-3">
 					<h5 class="text-regular text-uppercase border-bottom">Resources</h5>
-					<p>links here</p>
+					<?php wp_nav_menu( array( 
+            'theme_location' => 'site_nav_resources',
+            'container'       => 'div'
+          ) ); ?>
 				</div>
 				<div class="col-sm-3">
 					<h5 class="text-regular text-uppercase border-bottom">Company</h5>
-					<p>links here</p>
+					<?php wp_nav_menu( array( 
+            'theme_location' => 'site_nav_company',
+            'container'       => 'div'
+          ) ); ?>
 				</div>
 
 			</div>
@@ -88,9 +100,9 @@
 						<div class="dropdown d-none d-sm-block">
 							<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions for</button>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
-							<a href="#" class="dropdown-item">Transportation</a>
-							<a href="#" class="dropdown-item">Finance</a>
-							<a href="#" class="dropdown-item">Open Data</a>
+							<a href="/data-solution-transportation" class="dropdown-item">Transportation</a>
+							<a href="/data-solution-finance" class="dropdown-item">Finance</a>
+							<a href="/data-solution-open-data" class="dropdown-item">Open Data</a>
 							<div class="arrow bottom right"></div>
 							</div>
 						</div>
