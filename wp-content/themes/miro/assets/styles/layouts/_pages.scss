@@ -1,0 +1,60 @@
+.page-hero {
+	height:100vh;
+	width:100%;
+	position: relative;
+	background-color:$mdc-grey-900;
+	.hero-content{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:100;
+	}
+	.explore-more {
+		position: absolute; 
+		left:0; 
+		bottom:230px; 
+		width:100%;
+		z-index:100;
+	}
+	.hero-overlay {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100vh;
+		z-index:1;
+		opacity:.75;
+	}
+	.hero-image {
+		height:100vh;
+		width:100%;
+		background-position:center;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+}
+
+// Custom AOS animations
+[data-aos="black-white"] {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+  transition-property: transform, -webkit-filter, filter;
+  &.aos-animate {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(0);
+  }
+}
+
+@include media-breakpoint-up(xs) {
+	.hero-image {
+		background-attachment: scroll;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.hero-image {
+		background-attachment: fixed;
+	}
+}

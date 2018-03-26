@@ -96,6 +96,18 @@ a:hover {
 .four-three {
   @include aspect-ratio(4, 3);
 }
+.one-one {
+  @include aspect-ratio(1, 1);
+}
+
+// Custom AOS animations
+[data-aos="f-out"] {
+  opacity: 1;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    opacity: 0 !important;
+  }
+}
 
 
 @include media-breakpoint-up(xs) {
