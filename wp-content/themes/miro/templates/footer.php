@@ -3,7 +3,7 @@
     <div class="row">
 			<div class="col-md-5 ml-md-auto">
 				<h4 class="mb-5 text-regular">Call us 1.206.340.8008</h4>
-				<h5 class="mb-0 text-uppercase">Corporata Office</h5>
+				<h5 class="mb-0 text-uppercase">Corporate Office</h5>
 				<p><small>705 5th Ave S, Suite 600<br>Seattle, WA 98104<br><a href="" class="text-uppercase">View on Map</a></small></p>
 				<h5 class="mb-0 text-uppercase">Washington DC Office</h5>
 				<p><small>1875 Connecticut Ave NW, Suite 715<br>Washington, D.C. 20009<br><a href="" class="text-uppercase">View on Map</a></small></p>
