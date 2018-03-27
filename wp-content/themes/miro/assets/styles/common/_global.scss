@@ -99,6 +99,11 @@ a:hover {
 .one-one {
   @include aspect-ratio(1, 1);
 }
+.img-bg {
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
 
 // Custom AOS animations
 [data-aos="f-out"] {

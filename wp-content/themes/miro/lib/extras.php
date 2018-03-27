@@ -259,8 +259,9 @@ add_filter('the_content', __NAMESPACE__ . '\\WPTime_add_custom_class_to_all_imag
 //Add Custom Image Sizes to Media Uploader
 function my_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'sixteen-nine' => __( 'Sixteen Nine' ),
-        'sixteen-nine-large' => __( 'Sixteen Nine Large' ),
+        'sixteen-nine' => __( '16:9' ),
+        'sixteen-nine-large' => __( '16:9 Large' ),        
+        'four-three' => __( '4:3' ),
     ) );
 }
 add_filter( 'image_size_names_choose', __NAMESPACE__ . '\\my_custom_image_sizes' );
