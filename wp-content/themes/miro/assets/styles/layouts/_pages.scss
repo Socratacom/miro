@@ -46,6 +46,20 @@
 	  filter: grayscale(0);
   }
 }
+[data-aos="wipe"] {
+	overflow: hidden;
+	-webkit-clip-path: polygon(0 0,0 0,0 100%,0 100%);
+	clip-path: polygon(0 0,0 0,0 100%,0 100%);
+	opacity: 0;
+	transition: opacity 1.1s ease 167ms,-webkit-clip-path 1.1s cubic-bezier(.19,1,.22,1);
+	transition: clip-path 1.1s cubic-bezier(.19,1,.22,1),opacity 1.1s ease 167ms;
+	transition: clip-path 1.1s cubic-bezier(.19,1,.22,1),opacity 1.1s ease 167ms,-webkit-clip-path 1.1s cubic-bezier(.19,1,.22,1);
+	&.aos-animate {
+		opacity: 1;
+		-webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+		clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	}
+}
 
 @include media-breakpoint-up(xs) {
 	.hero-image {
@@ -58,3 +72,7 @@
 		background-attachment: fixed;
 	}
 }
+
+
+
+
