@@ -22,6 +22,16 @@
         "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       ]
     },
+    "masonry.pkgd.min.js": {
+      "files": [
+        "scripts/masonry.pkgd.min.js"
+      ]
+    },
+    "imagesloaded.pkgd.min.js": {
+      "files": [
+        "scripts/imagesloaded.pkgd.min.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

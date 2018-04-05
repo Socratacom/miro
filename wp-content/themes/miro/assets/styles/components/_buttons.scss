@@ -85,16 +85,16 @@ button {
 .btn-light {
 	color:$mdc-blue-500 !important;
 }
-.btn-outline-light {
-	border-width:2px;
+.btn-outline-primary, .btn-outline-warning, .btn-outline-secondary, .btn-outline-success, .btn-outline-danger, .btn-outline-dark, .button-outline-info, .btn-outline-light {
+	border-width:3px !important;
 }
 .btn-outline-light:hover {
 	background-color:rgba($white,.25);
+	color:$white;
 }
 .btn-circle {
 	padding:0.5rem;
 	border-radius:50%;
-	border-width:3px;
 	border-style:solid;
 	display:inline-block;
 	font-size:1.3rem;

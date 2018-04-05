@@ -26,3 +26,14 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+// Display solution taxonomies
+function print_solution_taxonomies() {
+	global $terms;
+	$terms = get_the_terms($post->ID , 'solution');
+	echo '<div class="post-taxonomies">';
+	echo $terms[0]->name;
+	for ($i = 1; $i < count($terms); $i++) {echo ', ' . $terms[$i]->name ;};
+	echo '</div>';
+}

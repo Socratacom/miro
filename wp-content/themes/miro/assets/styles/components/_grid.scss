@@ -22,13 +22,22 @@
 	-moz-transition:.25s;
 	-webkit-transition:.25s;
 	transition:.25s;
-	.card-img {
+	.card-img, .card-img-top {
 		border:none;
 		border-radius:0;
 	}
 	.card-footer {
 		border:none;
 		border-radius:0;
+	}
+	.card-title {
+		font-weight: $font-regular;
+		a {
+			color:$black;
+		}
+		a:hover {
+			text-decoration:underline;
+		}
 	}
 }
 .card:hover {

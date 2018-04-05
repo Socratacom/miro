@@ -267,6 +267,13 @@ function my_custom_image_sizes( $sizes ) {
 add_filter( 'image_size_names_choose', __NAMESPACE__ . '\\my_custom_image_sizes' );
 
 
+
+
+
+
+
+
+
 // SHORT CODES
 
 /**

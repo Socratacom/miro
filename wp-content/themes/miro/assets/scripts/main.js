@@ -47,6 +47,69 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
+    // Blog page
+    'blog': {
+      init: function() {
+				// masonry 
+				var $grid = $('.grid-wrapper').masonry({
+					itemSelector: '.grid-item',
+					columnWidth: '.grid-sizer',
+					percentPosition: true,
+					transitionDuration: 0,
+				});
+
+				$grid.imagesLoaded().progress( function() {
+					$grid.masonry();
+				});
+
+				// apply masonry after facet filtering
+				$(document).on('facetwp-loaded', function() {
+					var $grid = $( '.grid-wrapper' ).imagesLoaded( function() {
+						$grid.masonry("reloadItems");
+						$grid.masonry( {
+							itemSelector : '.grid-item',
+							columnWidth: '.grid-sizer'
+						});
+					});
+				});
+
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+      }
+    },
+    // Archive page
+    'archive': {
+      init: function() {
+
+				// masonry 
+				var $grid = $('.grid-wrapper').masonry({
+					itemSelector: '.grid-item',
+					columnWidth: '.grid-sizer',
+					percentPosition: true,
+					transitionDuration: 0,
+				});
+
+				$grid.imagesLoaded().progress( function() {
+					$grid.masonry();
+				});
+
+				// apply masonry after facet filtering
+				$(document).on('facetwp-loaded', function() {
+					var $grid = $( '.grid-wrapper' ).imagesLoaded( function() {
+						$grid.masonry("reloadItems");
+						$grid.masonry( {
+							itemSelector : '.grid-item',
+							columnWidth: '.grid-sizer'
+						});
+					});
+				});
+
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+      }
+    },
     // About us page, note the change from about-us to about_us.
     'about_us': {
       init: function() {
