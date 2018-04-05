@@ -109,7 +109,7 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.39-beta');
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), '', '4.0.40-beta');
   wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900', false, null);
 	wp_enqueue_style('google-fonts');
   wp_deregister_script('jquery');
