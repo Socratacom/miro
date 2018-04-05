@@ -28,7 +28,7 @@
 			<div class="col-sm-10 pb-5 m-auto d-none d-md-block">
 				<div class="d-flex flex-row">
 					<div class="mr-auto">
-						<?php echo do_shortcode('[facetwp facet="solutions"]');?>
+						Filter by: <?php echo do_shortcode('[facetwp facet="solutions"]');?>
 					</div>
 					<div>
 						<button onclick="FWP.reset()" class="btn btn-primary"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>

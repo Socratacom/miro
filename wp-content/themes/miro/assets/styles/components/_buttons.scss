@@ -105,6 +105,46 @@ button {
 	box-shadow:0 5px 15px rgba($black, .3);
 }
 
+.facetwp-facet {
+position: relative;
+display:inline-block;
+height:42px;
+border-bottom: $mdc-grey-500 solid 1px;
+border-radius: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+background-color:$white;
+select {
+height:42px;
+padding: 0 15px;
+line-height: 1.4em;
+font-weight: $font-regular;
+background:transparent;
+background-image: none;
+border:0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+-moz-appearance: none;
+-moz-border-radius: 0;
+outline:none;
+cursor:pointer;
+}
+}
+.facetwp-facet:hover {
+background-color:$mdc-grey-400;
+}
+.facetwp-facet:before {
+font-family: 'icomoon';
+content:"\e945"; 
+position: absolute;
+top:8px;
+right:15px;
+color:$black;
+font-size: 16px;
+pointer-events: none;
+}
+
 @include media-breakpoint-up(xs) {
 
 }
