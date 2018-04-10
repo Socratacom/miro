@@ -8,4 +8,24 @@ footer {
 	h4, h5, p {
 		color:$mdc-blue-grey-500;
 	}
+	.menu-products-container, .menu-services-container, .menu-resources-container, .menu-company-container {
+		.menu {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			a {
+				font-weight: $font-medium;
+				font-size:.9rem;
+			}
+		}
+	}
 }
+
+@include media-breakpoint-up(xs) {
+	.footer-logo {
+		display:inline-block;
+		max-width:150px;
+		line-height:1.5;
+	}
+}
+
