@@ -39,14 +39,19 @@ use Roots\Sage\Wrapper;
 		?>
 
     <script type="text/javascript">
-    	  //Overlay Menu
+    	  //Overlay
 				function openNav() {
 				  document.getElementById("siteNav").style.height = "100%";
 				}
 				function closeNav() {
 				  document.getElementById("siteNav").style.height = "0%";
 				}
-
+				function openSearch() {
+				  document.getElementById("siteSearch").style.height = "100%";
+				}
+				function closeSearch() {
+				  document.getElementById("siteSearch").style.height = "0%";
+				}
     </script>
 
     
