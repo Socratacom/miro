@@ -15,9 +15,11 @@ html, body, [canvas=container], [off-canvas] {
 body {
 	padding:15px;
 	background-color:$mdc-blue-50;
+	margin:0;
 }
 body.no-scroll {
 	overflow:hidden;
+	margin-right:15px;
 }
 .main {
 	width:100% !important;

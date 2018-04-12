@@ -102,47 +102,78 @@
 <div id="siteNav" class="overlay">			
 	<a href="javascript:void(0)" onclick="closeNav()" class="icon-ui-close overlay-close btn-circle btn-primary btn-shadow lockscroll"></a>
   <div class="overlay-content">
-	  	<div class="container">
-	  		<div class="row">
-	  			<div class="col-sm-6">
-	  				<h2>I'm a data decision maker</h2>
-					  <p class="mb-4">Are you looking for cost effective data solutions that etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-					  <p class="mb-5"><a href="/data-solution-buyer" class="btn btn-primary">Learn More</a></p>
-					</div>
-	  			<div class="col-sm-6">
-	  				<h2>I work with data daily</h2>
-					  <p class="mb-4">Do you analyze data to make informed decisions nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.</p>
-					  <p class="mb-5"><a href="/data-solution-user" class="btn btn-primary">Learn More</a></p>
-					</div>
-				
-				<hr/>
-
-				<div class="col-sm-12">
-					<h3 class="mb-4">Solutions for...</h3>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-sm-6 text-center match-height">
+  				<i class="icon-administrator display-1 mdc-text-blue-800"></i>
+  				<h2>I'm a data decision maker</h2>
+				  <p class="mb-4">Are you looking for cost effective data solutions that etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+				  <p class="mb-5"><a href="/data-solution-buyer" class="btn btn-primary">Learn More</a></p>
 				</div>
-
+  			<div class="col-sm-6 text-center match-height">
+  				<i class="icon-workspace display-1 mdc-text-orange-800"></i>
+  				<h2>I work with data daily</h2>
+				  <p class="mb-4">Do you analyze data to make informed decisions nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.</p>
+				  <p class="mb-5"><a href="/data-solution-user" class="btn btn-primary">Learn More</a></p>
+				</div>
+				<div class="col-sm-12 text-center">
+					<hr>
+				</div>
 				<div class="col-sm-4">
-					<div class="card mb-2 match-height mdc-bg-grey-100">
+					<div class="card match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="/transportation" class="d-block p-3"><i class="icon-transportation mdc-text-purple-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Transportation</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="card mb-2 match-height mdc-bg-grey-100">
+					<div class="card match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="/finance" class="d-block p-3"><i class="icon-money mdc-text-green-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Finance</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="card mb-5 match-height mdc-bg-grey-100">
+					<div class="card match-height mdc-bg-grey-100">
 						<div class="card-body text-center">
 							<a href="/open-data" class="d-block p-3"><i class="icon-data-grid mdc-text-orange-500 display-3 d-block mb-3"></i><span class="text-uppercase text-medium mdc-text-grey-800">Open Data</span></a>
 						</div>
 					</div>
 				</div>
+
+
+				<div class="col-sm-12">
+		
+
+
+<p>
+
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+
+  <div class="collapse" id="multiCollapseExample1" style="height:600px;">
+  
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+    </div>
+
+</p>
+
+    
+  
+
+
+
+
+
+
+				</div>
+
+				
+
+	
+		
 			</div>
+		</div>
 	</div>
 </div>
 
@@ -165,6 +196,5 @@
 
 <a href="javascript:void(0)" onclick="openNav()" class="icon-ui-menu overlay-menu btn-circle btn-primary btn-shadow lockscroll" data-aos="fade-zoom-in" data-aos-anchor="#trigger-menu" data-aos-anchor-placement="top-top"></a>
 
-<script>$(".lockscroll").click(function(){$("body").toggleClass("no-scroll")})</script>
-<script>AOS.init();</script>
+
 

@@ -37,20 +37,21 @@ use Roots\Sage\Wrapper;
 			get_template_part('templates/footer');
 			wp_footer();
 		?>
-
+<script>$(".lockscroll").click(function(){$("body").toggleClass("no-scroll")})</script>
+<script>AOS.init();</script>
     <script type="text/javascript">
     	  //Overlay
 				function openNav() {
-				  document.getElementById("siteNav").style.height = "100%";
+				  document.getElementById("siteNav").setAttribute( "style", "height: 100%; opacity: 1;");
 				}
 				function closeNav() {
-				  document.getElementById("siteNav").style.height = "0%";
+				  document.getElementById("siteNav").setAttribute( "style", "height: 0%; opacity: 0;");
 				}
 				function openSearch() {
-				  document.getElementById("siteSearch").style.height = "100%";
+				  document.getElementById("siteSearch").setAttribute( "style", "height: 100%; opacity: 1;");
 				}
 				function closeSearch() {
-				  document.getElementById("siteSearch").style.height = "0%";
+				  document.getElementById("siteSearch").setAttribute( "style", "height: 0%; opacity: 0;");
 				}
     </script>
 

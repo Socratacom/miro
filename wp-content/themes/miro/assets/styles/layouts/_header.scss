@@ -6,22 +6,26 @@
 		line-height:1.5;
 	}
 	.overlay {
-		height: 0%;
+		opacity:0;
+		height: 0;
 		width: 100%;
 		position: fixed;
-		z-index: 100;
 		top: 0;
 		left: 0;
 		background-color: $white;
 		overflow-y: hidden;
-		transition: 0.5s;
-		z-index:1100;
+		transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		z-index:9001;
 		.overlay-content {
 			position: absolute;
 			top:0;
 			left:0;
 			width: 100%;
-			height:100vh;
+			height:100%;
 			padding:100px 0;
 			overflow:auto;
 			.menu-products-container, .menu-services-container, .menu-resources-container, .menu-company-container {
@@ -92,6 +96,11 @@
 @include media-breakpoint-up(sm) {
 	.overlay-close, .overlay-menu {
 		top:30px;
+	}
+	.overlay-close {
+		right:30px;
+	}
+	.overla-menu {
 		right:30px;
 	}
 }
@@ -103,6 +112,13 @@
 	}
 	.overlay-close, .overlay-menu {
 		padding:1rem;
+	}
+
+	.overlay-close {
+		right:45px;
+	}
+	.overla-menu {
+		right:30px;
 	}
 }
 
